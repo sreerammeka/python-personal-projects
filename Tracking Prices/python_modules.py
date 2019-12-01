@@ -1,3 +1,5 @@
+#Python modules most frequently used are listed here
+
 #BeautifulSoup
 #BeautifulSoup is used to parse and extract content from HTML webpages and XML
 #syntax is below
@@ -14,4 +16,14 @@ import re
 
 #import smtplib to send email
 import smtplib
+
+#Modules for Web scraping are BeautifulSoup, Scrapy
+#Installing BeautifulSoup 4
+pip install bs4
+#Installing Scrapy
+pip install scrapy
+
+
+
+
 
