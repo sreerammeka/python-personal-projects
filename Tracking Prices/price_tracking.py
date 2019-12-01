@@ -1,4 +1,5 @@
-#Sample Test program to track prices on Amazon for a given product
+#Sample Test program to track prices on Amazon for a given product and send email for price drop
+
 
 #import urllib.request
 
@@ -21,22 +22,26 @@ page = requests.get(URL, headers)
 #Parse the contents of the webpage, input is "contents of the page"
 soup = BeautifulSoup(page.content, 'html.parser')
 
-print("Printing status code",page.status_code)
-print("START OF HTML PARSE WITHOUT PRETTIFY")
-p = print("Printing contents of the page without Prettify", soup)
-print("END OF HTML PARSE WITHOUT PRETTIFY")
-print("START OF HTML PARSE WITH PRETTIFY")
-#Display contents of the page as list using "prettify" method in "BeautifulSoup"
-#prettify method from BeautifulSoup will convert a BS- BeautifulSoup?? Parse tree to a unicode string
-q = print("Printing contents of the page using Prettify", soup.prettify)
-print("END OF HTML PARSE WITH PRETTIFY")
+# print("Printing status code response of the webpage",page.status_code)
+# print("START OF HTML PARSE WITHOUT PRETTIFY")
+# p = print("Printing contents of the page without Prettify", soup)
+# print("END OF HTML PARSE WITHOUT PRETTIFY")
+# print("START OF HTML PARSE WITH PRETTIFY")
+# #Display contents of the page as list using "prettify" method in "BeautifulSoup"
+# #prettify method from BeautifulSoup will convert a BS- BeautifulSoup?? Parse tree to a unicode string
+# q = print("Printing contents of the page using Prettify", soup.prettify)
+# print("END OF HTML PARSE WITH PRETTIFY")
 
-#Testing to check both contents WITH and WITHOUT PRETTIFY are same, (contents are same)
-if p==q:
-    print("Both texts are same, there's no difference")
+# #Testing to check both contents WITH and WITHOUT PRETTIFY are same, (contents are same)
+# if p==q:
+#     print("Both texts are same, there's no difference with PRETTIFY")
+
+#Find the first tag with the id="productTitle" with the "find" method, use "find_all" to find list of all tags
+print("Product Title is ", soup.find(id="productTitle"))
+
+#Find the first tag with the id="price_inside_buybox" with the "find" method
+print("Product Price inside Buybox is ", soup.find(id="price_inside_buybox"))
 
 
-
-
-
+#print(soup.find_all(id="productTitle"))
 
