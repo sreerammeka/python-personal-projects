@@ -12,6 +12,15 @@
 # 9. Detect a face using OpenCV (Face recognition)
 # 10. Realtime Taxi App with Django and Angular/React
 # 11. Create a Python GUI interface using Tkinter
+# 12. Test a web app using Selenium WebDriver
 
 
 # (Last project) Write mock tests using Mock and UnitTest 
+
+#**Docker Sample Project examples
+https://github.com/TannerGabriel/docker-node-mongodb/blob/master/docker-compose.yml
+
+https://github.com/TannerGabriel/docker-node-mongodb/blob/master/frontend/Dockerfile
+
+https://github.com/TannerGabriel/docker-node-mongodb/blob/master/backend/Dockerfile
+

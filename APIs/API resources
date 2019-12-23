@@ -1,0 +1,31 @@
+#APIs available for use
+
+#Google Maps API
+#Google Maps API- to access the Google Maps API for "location" purposes
+
+
+#Facebook Graph API
+
+
+#Gmail API
+#Gmail API- can be used to access or write new emails.
+
+#Twitter API
+#Twitter API- can be used for posting content to twitter or getting the list of followers on Twitter etc
+
+#Instagram API
+#Instagram Media API- access Instagram photos and videos
+
+#Twilio API
+#Twilio API- can be used to integrate services like phones, VoIP, and messaging to be embedded into Web, desktop, and mobile software
+
+#Netflix API
+
+
+#face-api.js API
+#face-api.js API- face recognition API in browser with tensorflow.js 
+
+
+
+#API development
+#Apigee, WSO2, Postman
