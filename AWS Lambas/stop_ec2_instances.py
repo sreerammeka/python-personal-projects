@@ -21,11 +21,12 @@ def ec2_stop(event, context):
         for instance in reservation['Instances']:
             # print(instance['InstanceId'] + "are the instances stopped")
 
-            #Get the instance IDs and store in "id" and convert id to a list using []
+            #Get the instance IDs and store in "id" and convert id to a list using [] or list()
             id = [instance['InstanceId']]
 
 
             #This will stop the instances with all the instance ids stored in the "id" object, DryRun (is used to chkc if permissions are present before making the request to the resource) which is optional
+            #InstanceIds must be a list
             ec2.stop_instances(InstanceIds= id)
 
     return("The operation on the EC2 instances have been completed-Stopped")   
