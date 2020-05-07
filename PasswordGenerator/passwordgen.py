@@ -1,4 +1,5 @@
 #8 character Password Generator
+#Need to fix some characters not appearing from the 4 lists, when generating random passwords.
 
 #library for generating random numbers
 import random
