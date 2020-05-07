@@ -16,16 +16,16 @@ print("num_list is", num_list)
 #Select a random value from the list
 #Choice takes O(1) time to retrieve random data from a sequence.
 #Choice is faster than Shuffle
-lc= random.choice(lc_list)
-uc= random.choice(uc_list)
-num= random.choice(num_list)
-sc = random.choice(sc_list)
+# lc= random.choice(lc_list)
+# uc= random.choice(uc_list)
+# num= random.choice(num_list)
+# sc = random.choice(sc_list)
 
 before_list = [lc_list, uc_list, num_list, sc_list]
-combined_list = [lc, uc, str(num), sc]
+# combined_list = [lc, uc, str(num), sc]
 
 # shuffle_pass = random.shuffle(combined_list)
-shuffle_list = random.sample(combined_list, len(combined_list))
+# shuffle_list = random.sample(combined_list, len(combined_list))
 unmerged_shuffle_list = random.sample(before_list, len(before_list))
 # shuffle_pass = random.choice(combined_list)
 
