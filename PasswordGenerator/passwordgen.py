@@ -5,8 +5,9 @@ import random
 
 lc_list = ['a', 'b', 'c']
 uc_list = ['A', 'B', 'C']
-num_list = ['1', '2', '3', '4']
-# num_list = [*range(0, 10)]
+# num_list = ['1', '2', '3', '4']
+#convert an integer to a string after every iteration
+num_list = [str(i) for i in range(10)]
 sc_list = ['!', '@']
 
 print("num_list is", num_list)
@@ -55,9 +56,13 @@ a = pswdgen()
 
 print("The value of a is", a)
 
-finalString = ''.join(a)
+# finalpass = ''.join(a)
+#The '' is used as a seperator to join between the characters, here everything will be concatenated to each other
+# finalpass = ''.join(pswdgen())
+finalpass = ''.join(a)
 
-print("The value of finalString is", finalString)
+
+print("The final 8 character random password is", finalpass)
 
 
 
