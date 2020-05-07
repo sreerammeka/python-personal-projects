@@ -29,7 +29,7 @@ before_list = [lc_list, uc_list, num_list, sc_list]
 unmerged_shuffle_list = random.sample(before_list, len(before_list))
 # shuffle_pass = random.choice(combined_list)
 
-
+print("The unmerged shuffle list is", unmerged_shuffle_list)
 #Shuffle takes O(N) time to index a full list or sequence, and O(1) time to retrieve value
 # lc= random.shuffle(lc_list)
 # uc= random.shuffle(uc_list)
@@ -38,19 +38,14 @@ unmerged_shuffle_list = random.sample(before_list, len(before_list))
 
 def pswdgen():
 
-
 #Converting a number to string and adding all lists to generate a random password
     # final_pass = lc + uc + str(num) + sc
     #Change length from 8 to 12 to convert to a 12 character password generator
     final_shuffle_pass = random.sample(unmerged_shuffle_list[0] + unmerged_shuffle_list[1] + unmerged_shuffle_list[2] + unmerged_shuffle_list[3], 8)
     
-        
     return final_shuffle_pass
     # return final_pass, final_shuffle_pass, final_umerged_shuffle_pass
 
-print("The random password is", pswdgen())
-# print("The shuffled password is",
-# print(final_pass)
 
 #Testing by assigning a function to a variable.
 a = pswdgen()
@@ -61,7 +56,6 @@ print("The value of a is", a)
 #The '' is used as a seperator to join between the characters, here everything will be concatenated to each other
 # finalpass = ''.join(pswdgen())
 finalpass = ''.join(a)
-
 
 print("The final 8 character random password is", finalpass)
 
