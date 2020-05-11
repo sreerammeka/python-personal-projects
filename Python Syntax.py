@@ -2,6 +2,20 @@
 #print raw strings, print whatever is entered to the output
 print(r'C:\users\docs')
 
+Message = "Welcome User"
+a = 10
+#Memory Address of variables "Message" and "a" can be referenced using the function id()
+#Note: In Python, the value is stored in a memory address and any new variables referenced will have the same address if the value is not changed
+#Returns the memory address where the variable "Message"  is stored
+#Note: If a value is not referenced or stored in a variable, then the concept of "Garbage Collection" is used to store the unassigned value
+id(Message)
+
+#Returns the memory address where the variable "a"  is stored
+id(a)
+
+# id("Welcome User") will also return the same address as id(Message)
+
+
 
 #list
 list = ["a", "b", "c", 2, 3]
@@ -158,7 +172,7 @@ tuple1 = (34, 5, 67, 89)
 #Sets
 #Set is a collection of unique elements and is unordered
 #set is much faster since it uses a concept has hash
-#Even though duplicate values are present in a set, will only output single elements if they are duplicate, here 96 will be listed only once
+#Even though duplicate values are present in a set, will only output single elements if they are duplicate, here 96 will be listed only once when set1 is printed
 set1 = {56, 96, 45, 34, 96}
 
 set1.
