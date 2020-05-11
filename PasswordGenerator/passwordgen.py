@@ -53,11 +53,12 @@ a = pswdgen()
 print("The value of a is", a)
 
 # finalpass = ''.join(a)
-#The '' is used as a seperator to join between the characters, here everything will be concatenated to each other
-# finalpass = ''.join(pswdgen())
-finalpass = ''.join(a)
+#The '' is used as a seperator to join between the characters, here everything will be concatenated to each other since we are using a space '' seperator
+finalpass = ''.join(pswdgen())
+# finalpass = ''.join(a)
 
 print("The final 8 character random password is", finalpass)
+
 
 
 

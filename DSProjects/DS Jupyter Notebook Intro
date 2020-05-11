@@ -1,0 +1,12 @@
+nbmerge https://github.com/jbn/nbmerge -> can use this to merge multiple notebooks
+
+
+https://jupyterlab.readthedocs.io/en/stable/
+
+
+SQLAlchemy- We can use this if we want Jupyter notebooks to talk to your database?
+
+SQLite (currently SQLite3)- lightweight database for smaller projects
+import sqllite3
+
+Jupyter extensions- https://medium.com/@maxtingle/10-jupyter-notebook-extensions-making-my-lyfe-easier-f40139a334ce
