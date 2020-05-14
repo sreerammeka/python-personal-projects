@@ -8,6 +8,7 @@ lc_list = ['a', 'b', 'c']
 uc_list = ['A', 'B', 'C']
 # num_list = ['1', '2', '3', '4']
 #convert an integer to a string after every iteration
+# num_list = list(range(10))
 num_list = [str(i) for i in range(10)]
 sc_list = ['!', '@']
 

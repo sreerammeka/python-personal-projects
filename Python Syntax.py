@@ -107,6 +107,7 @@ del dict3["Phone"]
 
 #GET a specific item from a dictionary using GET method
 dict1.get("Name")
+dict.get("Key1")
 
 #Index all items i.e both key and value in a dictionary
 dict1.items()
