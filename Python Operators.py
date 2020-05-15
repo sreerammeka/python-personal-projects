@@ -1,8 +1,12 @@
-Arithmetic Operators
+# Arithmetic Operators
++
+-
+/
+*
+%
 
 
-
-Assignment Operators
+# Assignment Operators
 x = x + 2 can be written as x + = 2
 x = x * 3 can be written as x * = 3
 
