@@ -1,5 +1,7 @@
 #loops and iterations in python
 x = int(input("Enter a value:"))
+
+# if elif else
 if x > 5:
     print("IF statement executes and outputs TRUE, so will ignore other ELIF and ELSE statements")
 elif x < 5:
@@ -9,3 +11,11 @@ elif x == 5:
 else:
     print("Will execute if both IF and ELIF fails")
 
+#while loop
+
+
+
+
+
+
+#for loop
