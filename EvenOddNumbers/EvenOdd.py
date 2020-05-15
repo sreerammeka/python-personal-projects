@@ -1,4 +1,5 @@
-#Python program to print odd or even numbers
+# Python program to print odd or even numbers
+# Note: If we input a number, still it takes the input as string (so we need to convert string to int)
 
 
 #Input function returns a string
