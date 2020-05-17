@@ -1,4 +1,5 @@
 #loops and iterations in python
+#To debug, set a breakpoint after input, press debug and press F8, watch the values in the debugger window
 x = int(input("Enter a value:"))
 
 # if elif else
@@ -12,6 +13,28 @@ else:
     print("Will execute if both IF and ELIF fails")
 
 #while loop
+#While loop is used for doing the same operation multiple times without writing multiple statements
+# While can be used for printing on multiple lines
+# While executes or performs the operation as long as it fails
+# For while loop, 3 things are necessary: initialization, condition, increment or decrement
+
+while x < 5:
+    # Specifying end will ensure that it will be on same line
+    print("Hello, testing a while loop ", end="")
+    y = 0
+
+    while y < 3:
+        print("Nested while loop ", end="")
+        y+= 1
+    x+= 1
+    # prints on a new line
+    print()
+
+
+
+    # incrementing the value of x, otherwise x will remain the same and will be stuck in a loop
+    x+=1
+
 
 
 
