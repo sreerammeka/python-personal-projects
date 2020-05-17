@@ -22,23 +22,12 @@ while x < 5:
     # Specifying end will ensure that it will be on same line
     print("Hello, testing a while loop ", end="")
     y = 0
-
     while y < 3:
         print("Nested while loop ", end="")
         y+= 1
     x+= 1
     # prints on a new line
     print()
-
-
-
-    # incrementing the value of x, otherwise x will remain the same and will be stuck in a loop
-    x+=1
-
-
-
-
-
 
 
 #for loop
