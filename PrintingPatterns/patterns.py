@@ -39,7 +39,7 @@ print("Printing the same pattern by nesting a while loop inside a for loop")
 
 z = 1
 for i in range(4):
-    z=1
+    z = 1
     while z <= 4:
         print("# ", end="")
         z += 1
@@ -48,9 +48,9 @@ for i in range(4):
 
 print("Printing the same pattern by nesting a for loop inside a while loop")
 
-p=1
-while p<=4:
+p = 1
+while p <= 4:
     for i in range(4):
         print("# ", end="")
-    p+=1
+    p += 1
     print()
