@@ -30,16 +30,31 @@ print(arr)
 # Searching whether a given input from user is present in the array or not
 # Else can also be used with "for" loop NOT only with "IF" statement
 val = int(input("Enter a value to search:"))
-counter = 0
-for j in arr:
-    if j == val:
-        # Printing the index value
-        print(counter)
-        # Break out of the loop if value matches with the value entered by user, otherwise continue the search
-        break
-    counter += 1
-else:
-    print("The entered input value is not present in the array")
+# counter = 0
+# for j in arr:
+#     if j == val:
+#         # Printing the index value
+#         print(counter)
+#         # Break out of the loop if value matches with the value entered by user, otherwise continue the search
+#         break
+#     counter += 1
+# else:
+#     print("The entered input value is not present in the array")
 
 # Alternatively, instead of using a for loop and if loop, we can use built in method of array "index"
-# print(arr.index(j))
+# Here value of val will be searched in the array, then will print the index if it matches, otherwise will output ValueError
+
+# print(arr.index(val))
+# Try and except, else
+# Try executing this block, if error found then return error using except, or print the error to the user in the except block
+try:
+    print(arr.index(val))
+# Catching the ValueError exception
+# If exceptions are present after the try block is executed, then use the exceptions block to catch those specific exceptions
+except ValueError as v:
+    print("The entered value to search is not present in the array. The error is: ", v)
+# Else do this, if no exception or error is found
+else:
+    print("There are no exceptions found")
+
+
