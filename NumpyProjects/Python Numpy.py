@@ -49,9 +49,9 @@ print("The value of array arr4 is: ", arr4)
 # zeros()
 # zeros() will return ALL zeros with float values by default, we can also convert them to an integer
 arr5 = zeros(5, int)
-print(arr5)
+print("The value of array arr5 full of zeros is: ",arr5)
 
 # ones()
 # ones() will return ALL ones with float values by default, we can also convert them to an integer
 arr6 = ones(5, int)
-print(arr6)
+print("The value of array arr6 full of ones is: ", arr6)
