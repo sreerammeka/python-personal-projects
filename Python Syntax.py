@@ -23,11 +23,11 @@ list = ["a", "b", "c", 2, 3]
 #indexing elements in a list
 #if list = ["a", "b", "c", 2, 3], then we can index elements of a list as below
 
-list[0] will index the zeroth element "a"
-list[-1] will index the zeroth element "a"
-list[1:4] will index the second element and exclude the fourth element here (means last element mentioned will be excluded)
-list[1:] will index from the first element till the last element in the list
-list[:4] will index from the zeroth element till the third element, which means it excludes the fourth element.
+# list[0] will index the zeroth element "a"
+# list[-1] will index the zeroth element "a"
+# list[1:4] will index the second element and exclude the fourth element here (means last element mentioned will be excluded)
+# list[1:] will index from the first element till the last element in the list
+# list[:4] will index from the zeroth element till the third element, which means it excludes the fourth element.
 
 #adding elements to a list
 #appends number 45 to the end of the list name list
@@ -59,11 +59,6 @@ del list[:4]
 #If we want to add multiple elements to the end of the list, use the extend method, but we need to mention that in a list 
 list.extend([3, 4, 9, "santa"])
 
-
-#indexing values from a dictionary
-#We can 
-dict['Key1']= 'New Value1'
-
 #A dictionary is used to a store a group of objects as Key Value pairs (also called as map, HashMap, hash in other languages like Java)
 # A dictionary is unordered and the values of items can be changed by referencing the 'keys' in the dictionary
 #Personal details can be stored and can be easily referenced when stored in a dictionary
@@ -72,6 +67,12 @@ dict['Key1']= 'New Value1'
 #Here City is a LIST and Phone is a DICTIONARY
 dict = {"Key1":"Value1", "Key2":"Value2" }
 dict1 = {"Name": "Sunil", "City": ["Chicago", "Boston","LA", "Seattle"], "Age": 25, "Zipcode": 75932, "Phone":{"Phone1": 123, "Phone2": 345, "Phone3": 456}}
+
+#indexing values from a dictionary using the key
+dict["Key1"]
+
+# We can update the values of a dictionary using the key but the key has to exist
+dict['Key1'] = 'New Value1'
 
 #Index a list "City" from dict1, using the key value
 dict1["City"]
@@ -83,7 +84,7 @@ dict1["City"][1]
 dict1["Phone"]
 
 #Index a specfic item from dictionary "Phone" within a dictionary dict1 (first index dict1 and then index dictionary Phone from dict1)
-dict1["Phone"][Phone1]
+dict1["Phone"]["Phone1"]
 
 #Map KEYS from a list to VALUES from a list
 #Use Zip method to map keys to values and finally use a dictionary to convert to a dictionary
@@ -91,12 +92,15 @@ list1 = ["Name", "City", "Age", "Zipcode"]
 list2 = ["Sunil", "Chicago", 32, 53428]
  
 #Using a zip function to map keys in list1 to values in list2 and store them in a dict
+# Zip function can be used to create a dictionary using two lists with one list being the keys
+# and the other list being the values of that keys
 dict3 = {zip(list1, list2)}
-#Outputs dict3 = {["Name": "Sunil", "City": "Chicago" , "Age": 32, "Zipcode": 53428]
+print("Dict 3 is: ", dict3)
+#Outputs dict3 = {["Name": "Sunil", "City": "Chicago" , "Age": 32, "Zipcode": 53428
 
 
 #Update a value in a dictionary, updates the value of key "City" to value "Boston"
-dict3["City"] = "Boston"
+# dict3["City"] = "Boston"
 
 #Insert a new key value in to an existing dictionary if it doesn't exist, other update existing value
 dict3["Phone"] = 1234
@@ -176,13 +180,11 @@ tuple1 = (34, 5, 67, 89)
 #Even though duplicate values are present in a set, will only output single elements if they are duplicate, here 96 will be listed only once when set1 is printed
 set1 = {56, 96, 45, 34, 96}
 
-set1.
+# rstrip() method
+# rstrip() method removes a whitespaces or the character to be removed from a sentence.
 
 
-rstrip() method removes a whitespaces or the character to be removed from a sentence.
-
-
-split() method 
+# split() method
 
 #map  function is used to perform an operation on a list with the desired output function such as converting to an integer or calling some function to get the desired output operation
 map(function, list or tuple or string)
