@@ -44,7 +44,16 @@ print("The addition and subtraction of two numbers is:", add_sub(3, 4))
 
 # Storing or assigning the function return values to a variable
 result = add_sub(5,6)
-print(result)
+print("The values stored in result is:", result)
+
+# Printing the type of "result"
+print(type(result))
+
+# We can also store return values separately in different variables by:
+# Stores c in result1 and d in result2
+result1, result2, result3, result4, result5 = add_sub(5,6)
+
+print("The values in result1...result5 is: ", result1, result2, result3, result4, result5)
 
 
 
