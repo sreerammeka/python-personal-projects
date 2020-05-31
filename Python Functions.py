@@ -9,10 +9,14 @@
 
 import math
 
-a = math.floor(2.9) returns 2
-b = math.ceil(2.9) returns 3
-p = math.floor(2.1) returns 2
-q = math.ceil(2.1) returns 3
+# a = math.floor(2.9) returns 2
+a = math.floor(2.9)
+# b = math.ceil(2.9) returns 3
+b = math.ceil(2.9)
+# p = math.floor(2.1) returns 2
+p = math.floor(2.1)
+# q = math.ceil(2.1) returns 3
+q = math.ceil(2.1)
 
 #Power function
 # math.pow(3,2) returns 3**2 i.e 9 as output
@@ -22,3 +26,8 @@ from math import sqrt, pow
 
 #To find the functions in a module
 help('math') or help("math")
+
+
+
+
+
