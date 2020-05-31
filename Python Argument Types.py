@@ -27,12 +27,14 @@ person_details("sunil", 35)
 # "age" and assign values in any order but it will pass the values taking the keyword into consideration
 person_details(age=43, name="John")
 
+
 # Default Argument Example
 # Default values are specified inside the function arguments
 # Here if age is not modified anywhere, then the default value of age is 28 when referenced in the program
 def person_details1(name, age=28):
     print(name)
     print(age)
+
 
 # Here, the default values is being modified by passing new value 35, so age will get 35
 person_details1("sunil", 35)
@@ -52,8 +54,10 @@ def sum(a, *b):
         c = c + i
     print("The sum when taking one input a as mandatory input and other input b as variable length argument is :", c)
 
+
 # a will store the first mandatory fixed value 2, b will store a tuple (3, 5, 6) since it can have multiple values
 sum(2, 3, 5, 6)
+
 
 # We can improve the above function by passing all values to b instead of storing one value in a and others in b
 def sum_optimized(*b):
@@ -63,8 +67,10 @@ def sum_optimized(*b):
         c = c + i
     print("The sum when taking one input b as variable length argument is :", c)
 
+
 # b will store a tuple (2, 3, 5, 6) since it can have any number of values
 sum_optimized(2, 3, 5, 6)
+
 
 # We can use variable length arguments on integers, strings, float etc
 # on tuples, list (need to check and verify)
@@ -76,4 +82,51 @@ def person_name(*name):
     for i in name:
         print(i)
 
+
 person_name("sunil", "john", "michael")
+
+
+# We can't pass values to variable length arguments *data directly with keywords such as age, phone_num, city etc
+# To avoid this issue, we have to use "Keyworded Variable Length Arguments" using **data or **kwargs,
+# also called keyword arguments in short
+# "Keyworded Variable Length Arguments" will store as a "dictionary" instead of like a "tuple" in "Variable Length Arguments"
+def person(name, **data):
+    # passes name = sunil and prints "sunil" and the other keywords arguments as a "dictionary"
+    print("The name is ", name)
+    print("The values stored in data as dictionary is ", data)
+
+    # Index a key and value each time using the below for loop. Index the key using "key or i", value using "value or j"
+    # A dictionary can be indexed by calling dictionary_name.items() which displays keys and values
+    # i is indexing a key, j is indexing a value
+
+    # Indexing both key and value from the key, value pairs in the dictionary "data"
+    for i, j in data.items():
+    # for key, value in data.items():
+        # prints key and value side by side
+        print("The key and value in the dictionary data is :", i, j)
+
+    # Indexing both key and value from the key, value pairs in the dictionary "data" but printing only "value"
+    for i, j in data.items():
+    # for key, value in data.items():
+        print("The values in the dictionary data is :", j)
+
+    # Indexing both key and value from the key, value pairs in the dictionary "data" but printing only "keys"
+    for i, j in data.items():
+    # for key, value in data.items():
+        print("The keys in the dictionary data is :", i)
+
+    # Indexing both key and value from the key, value pairs in the dictionary "data" but printing both "key" and "value"
+    # Here i is indexing both key and value
+    for i in data.items():
+    # for key, value in data.items():
+        print("The key and value pair in the dictionary data is :", i)
+
+    # Indexing both key and value from the key, value pairs in the dictionary "data" but printing both "key" and "value"
+    # as a tuple because it is indexing both key and value
+    # Here i is indexing both key and value
+    # Even though j is not indexed, j will take the last value in previous for loop which is "Hyderabad"
+    for i in data.items():
+    # for key, value in data.items():
+        print("The key and value pair in the dictionary data is :", i, j)
+
+person("sunil", age=35, phone_num=456789, city="Hyderabad")
