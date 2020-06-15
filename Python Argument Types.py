@@ -127,6 +127,6 @@ def person(name, **data):
     # Even though j is not indexed, j will take the last value in previous for loop which is "Hyderabad"
     for i in data.items():
     # for key, value in data.items():
-        print("The key and value pair in the dictionary data is :", i, j)
+        print("The key and value pair in the dictionary data without indexing j is: ", i, j)
 
 person("sunil", age=35, phone_num=456789, city="Hyderabad")
