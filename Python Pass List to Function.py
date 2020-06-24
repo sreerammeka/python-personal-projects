@@ -1,10 +1,10 @@
 # Pass a list as input to a function and return even and odd numbers
 
-list1 = [10, 22, 31, 42, 25]
+# manual input
+# list1 = [10, 22, 31, 42, 25]
 
-
-# Need to fix this
-# list1 = list(int(input("Enter a list:")))
+# Taking user input through list comprehension
+list1 = list(j for j in input("Enter the list of numbers:").strip().split())[:n]
 
 def func_even_odd(list1):
     global even
