@@ -4,24 +4,25 @@
 
 # Pattern is add and shift numbers to the right and continue this process till n-1 values
 
-n= int(input("Enter the maximum values for the Fibonacci sequence: "))
+n = int(input("Enter the maximum values for the Fibonacci sequence: "))
 
-# Initializing first two values
-a = 0
-b = 1
-
-print(a)
-print(b)
 
 def fibonacci(n):
     # Since we already know first two values: 0 and 1, start from 2 and end till n-1 since we are using range
-    global a,b
+
+    # Initializing first two values
+    a = 0
+    b = 1
+
+    print(a)
+    print(b)
+
     for i in range(2, n):
         c = a + b
         # swapping numbers which shift a and b variables to the right
         a = b
         b = c
-    print(c)
+        print(c)
 
 
 fibonacci(n)
