@@ -2,6 +2,7 @@
 
 list1 = [10, 22, 31, 42, 25]
 
+
 # Need to fix this
 # list1 = list(int(input("Enter a list:")))
 
@@ -19,6 +20,9 @@ def func_even_odd(list1):
 
 
 func_even_odd(list1)
+
+# If we don't use global keywords, then use assign the values for even and odd as below
+# even, odd = func_even_odd(list1)
 
 # Passing values inside a print function using format option
 # format is a string, so it passes the arguments inside it accordingly
