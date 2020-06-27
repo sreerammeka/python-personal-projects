@@ -20,4 +20,5 @@ def smart_div(func):
 
 # div1 is like a new function, where we are passing "div" as an argument which gets mapped to "func" in smart_div function
 div1 = smart_div(div)
+
 div1(2, 4)
