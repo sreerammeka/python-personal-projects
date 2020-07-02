@@ -10,7 +10,7 @@ import sys
 # If we import all functions from other modules, then the entire imported module will be executed first
 # NEED TO TEST WHAT HAPPENS IF SPECIFIC FUNCTIONS ARE IMPORTED
 
-from Python__name__variable import func1
+from Python__name__variable import *
 
 # When we execute this module/file, then __name__ will print __main__
 # If __name__ is present in a different module, then that module/file name will be printed instead of __main__

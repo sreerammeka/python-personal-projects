@@ -5,7 +5,13 @@
 def func1():
     print(__name__)
 
+
 # Still need to call the function like normal even though this module is being imported in another module
-func1()
+# func1()
+
+# This means ONLY execute or call the func1() when the __name__ variable results to __main__, which will be true when ONLY this module is executed
+# If this module is imported to other module, then this module will not be printed or executed in other module because the value of __name__ will be Python__name__variable when other module is executed
+if __name__ == "__main__":
+    func1()
 
 print("This is module1/file1")
