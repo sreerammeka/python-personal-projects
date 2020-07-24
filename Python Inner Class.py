@@ -39,7 +39,7 @@ class Student:
                 self.hard_drive_space = hard_drive
 
             def show_laptops(self):
-                print(self.brand_name, self.ram_memory, self.hard_drive_space)
+                return self.brand_name, self.ram_memory, self.hard_drive_space
 
 
 s1 = Student("John", "CSE67890")
@@ -59,4 +59,8 @@ print(s1.courses_available.laptop_brand.show_laptops())
 # Creating an Object for Inner Class outside the Outer Class
 course1 = Student.Courses("Math", "SPRNBA349")
 
+laptop1 = course1.Laptop("Dell", "16GB", "1TB")
+
 print(course1.show_courses())
+
+print(laptop1.show_laptops())
